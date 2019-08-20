@@ -1,0 +1,281 @@
+Features shape : (4306, 34)
+Target shape   : (4306,)
+
+Column names
+Index(['PrevOpen', 'PrevHigh', 'PrevLow', 'PrevAdjClose', 'PrevVol', '9MA',
+       '20MA', 'UpperBB', 'MidBB', 'LowerBB', 'SAR', 'ADX', 'APO', 'CCI', 'DX',
+       'MACD', 'MACDSIGNAL', 'MACDHIST', 'MOM', 'ROC', 'RSI', 'STOCHSLOWK',
+       'STOCHSLOWD', 'ULTOSC', 'OBV', 'ATR', 'BETA', 'LINEARREG',
+       'LINEARREG_ANGLE', 'LINEARREG_SLOPE', 'STDDEV', 'TSF', 'Open',
+       'Adj Close', 'DailyResult'],
+      dtype='object')
+
+Statistical summary
+       PrevOpen  PrevHigh  PrevLow  PrevAdjClose        PrevVol      9MA  \
+count  4,306.00  4,306.00 4,306.00      4,306.00       4,306.00 4,306.00   
+mean      62.66     63.62    61.62         62.66  18,230,439.85    62.45   
+std       99.01    100.45    97.37         98.96  20,083,694.03    98.74   
+min        0.38      0.41     0.35          0.37     285,600.00     0.46   
+25%        3.69      3.79     3.60          3.70   7,201,075.00     3.70   
+50%       12.26     12.53    11.98         12.30  12,139,500.00    12.23   
+75%       81.24     82.41    80.66         81.98  21,770,350.00    80.57   
+max      421.38    423.21   413.08        418.97 323,414,000.00   406.51   
+
+          20MA  UpperBB    MidBB  LowerBB     ...           ATR     BETA  \
+count 4,306.00 4,306.00 4,306.00 4,306.00     ...      4,306.00 4,306.00   
+mean     62.05    67.40    61.98    56.55     ...          2.14     0.65   
+std      98.27   106.24    98.16    90.36     ...          3.51     0.59   
+min       0.55     0.69     0.55     0.33     ...          0.05    -2.49   
+25%       3.68     4.13     3.68     3.17     ...          0.16     0.33   
+50%      12.16    14.09    12.21     9.62     ...          0.65     0.63   
+75%      78.95    88.11    78.30    68.99     ...          2.18     0.94   
+max     403.88   433.48   402.91   381.30     ...         19.91     5.99   
+
+       LINEARREG  LINEARREG_ANGLE  LINEARREG_SLOPE   STDDEV      TSF     Open  \
+count   4,306.00         4,306.00         4,306.00 4,306.00 4,306.00 4,306.00   
+mean       62.66             2.59             0.07     1.24    62.73    62.73   
+std        99.03            23.71             0.88     2.41    99.15    99.08   
+min         0.38           -81.26            -6.51     0.00     0.35     0.38   
+25%         3.69            -2.25            -0.04     0.08     3.68     3.69   
+50%        12.40             0.50             0.01     0.29    12.52    12.28   
+75%        83.59             6.98             0.12     1.18    83.08    81.62   
+max       415.54            83.08             8.23    23.65   420.30   421.38   
+
+       Adj Close  DailyResult  
+count   4,306.00     4,306.00  
+mean       62.73         0.49  
+std        99.03         0.50  
+min         0.37         0.00  
+25%         3.70         0.00  
+50%        12.32         0.00  
+75%        82.61         1.00  
+max       418.97         1.00  
+
+[8 rows x 35 columns]
+
+Datatypes
+PrevOpen           float64
+PrevHigh           float64
+PrevLow            float64
+PrevAdjClose       float64
+PrevVol            float64
+9MA                float64
+20MA               float64
+UpperBB            float64
+MidBB              float64
+LowerBB            float64
+SAR                float64
+ADX                float64
+APO                float64
+CCI                float64
+DX                 float64
+MACD               float64
+MACDSIGNAL         float64
+MACDHIST           float64
+MOM                float64
+ROC                float64
+RSI                float64
+STOCHSLOWK         float64
+STOCHSLOWD         float64
+ULTOSC             float64
+OBV                float64
+ATR                float64
+BETA               float64
+LINEARREG          float64
+LINEARREG_ANGLE    float64
+LINEARREG_SLOPE    float64
+STDDEV             float64
+TSF                float64
+Open               float64
+Adj Close          float64
+DailyResult          int64
+dtype: object
+
+PEARSON correlation
+                 PrevOpen  PrevHigh  PrevLow  PrevAdjClose  PrevVol   9MA  \
+PrevOpen             1.00      1.00     1.00          1.00    -0.16  1.00   
+PrevHigh             1.00      1.00     1.00          1.00    -0.16  1.00   
+PrevLow              1.00      1.00     1.00          1.00    -0.16  1.00   
+PrevAdjClose         1.00      1.00     1.00          1.00    -0.16  1.00   
+PrevVol             -0.16     -0.16    -0.16         -0.16     1.00 -0.16   
+9MA                  1.00      1.00     1.00          1.00    -0.16  1.00   
+20MA                 1.00      1.00     1.00          1.00    -0.16  1.00   
+UpperBB              1.00      1.00     1.00          1.00    -0.16  1.00   
+MidBB                1.00      1.00     1.00          1.00    -0.16  1.00   
+LowerBB              1.00      1.00     1.00          1.00    -0.17  1.00   
+SAR                  0.99      0.99     0.99          0.99    -0.16  1.00   
+ADX                 -0.07     -0.07    -0.07         -0.07     0.16 -0.07   
+APO                  0.18      0.17     0.18          0.18    -0.05  0.17   
+CCI                  0.01      0.01     0.01          0.02     0.00 -0.01   
+DX                  -0.04     -0.04    -0.04         -0.04     0.22 -0.04   
+MACD                 0.26      0.26     0.27          0.26    -0.07  0.25   
+MACDSIGNAL           0.29      0.29     0.29          0.29    -0.07  0.28   
+MACDHIST            -0.03     -0.03    -0.03         -0.03     0.01 -0.06   
+MOM                  0.11      0.11     0.12          0.12    -0.02  0.08   
+ROC                 -0.01     -0.01    -0.00         -0.00     0.01 -0.02   
+RSI                  0.06      0.06     0.07          0.07    -0.03  0.05   
+STOCHSLOWK           0.07      0.07     0.07          0.07     0.00  0.05   
+STOCHSLOWD           0.08      0.08     0.08          0.08    -0.01  0.06   
+ULTOSC               0.09      0.09     0.09          0.09    -0.03  0.07   
+OBV                  0.69      0.69     0.69          0.69     0.05  0.69   
+ATR                  0.94      0.94     0.93          0.94    -0.10  0.94   
+BETA                 0.12      0.12     0.12          0.12     0.04  0.12   
+LINEARREG            1.00      1.00     1.00          1.00    -0.16  1.00   
+LINEARREG_ANGLE      0.13      0.12     0.13          0.13    -0.04  0.11   
+LINEARREG_SLOPE      0.13      0.12     0.13          0.13    -0.03  0.10   
+STDDEV               0.79      0.79     0.79          0.79    -0.01  0.79   
+TSF                  1.00      1.00     1.00          1.00    -0.16  1.00   
+Open                 1.00      1.00     1.00          1.00    -0.16  1.00   
+Adj Close            1.00      1.00     1.00          1.00    -0.16  1.00   
+DailyResult         -0.00     -0.00    -0.00         -0.00    -0.03 -0.00   
+
+                 20MA  UpperBB  MidBB  LowerBB     ...        ATR  BETA  \
+PrevOpen         1.00     1.00   1.00     1.00     ...       0.94  0.12   
+PrevHigh         1.00     1.00   1.00     1.00     ...       0.94  0.12   
+PrevLow          1.00     1.00   1.00     1.00     ...       0.93  0.12   
+PrevAdjClose     1.00     1.00   1.00     1.00     ...       0.94  0.12   
+PrevVol         -0.16    -0.16  -0.16    -0.17     ...      -0.10  0.04   
+9MA              1.00     1.00   1.00     1.00     ...       0.94  0.12   
+20MA             1.00     1.00   1.00     1.00     ...       0.94  0.12   
+UpperBB          1.00     1.00   1.00     0.99     ...       0.95  0.13   
+MidBB            1.00     1.00   1.00     1.00     ...       0.94  0.12   
+LowerBB          1.00     0.99   1.00     1.00     ...       0.93  0.12   
+SAR              1.00     1.00   1.00     1.00     ...       0.94  0.13   
+ADX             -0.07    -0.06  -0.07    -0.09     ...      -0.06  0.03   
+APO              0.13     0.13   0.13     0.12     ...       0.04  0.02   
+CCI             -0.02    -0.02  -0.02    -0.02     ...      -0.04 -0.18   
+DX              -0.05    -0.03  -0.05    -0.06     ...      -0.04 -0.06   
+MACD             0.21     0.21   0.21     0.20     ...       0.09  0.02   
+MACDSIGNAL       0.26     0.26   0.25     0.25     ...       0.12  0.05   
+MACDHIST        -0.09    -0.08  -0.09    -0.10     ...      -0.07 -0.09   
+MOM              0.05     0.06   0.05     0.04     ...       0.01 -0.07   
+ROC             -0.03    -0.03  -0.03    -0.04     ...      -0.04 -0.13   
+RSI              0.03     0.03   0.03     0.03     ...      -0.02 -0.11   
+STOCHSLOWK       0.04     0.04   0.04     0.04     ...       0.03 -0.08   
+STOCHSLOWD       0.05     0.05   0.05     0.05     ...       0.03 -0.06   
+ULTOSC           0.06     0.07   0.06     0.06     ...       0.04 -0.07   
+OBV              0.69     0.69   0.69     0.68     ...       0.64  0.12   
+ATR              0.94     0.95   0.94     0.93     ...       1.00  0.13   
+BETA             0.12     0.13   0.12     0.12     ...       0.13  1.00   
+LINEARREG        1.00     1.00   1.00     0.99     ...       0.94  0.12   
+LINEARREG_ANGLE  0.07     0.07   0.07     0.07     ...      -0.00 -0.06   
+LINEARREG_SLOPE  0.07     0.07   0.06     0.05     ...       0.01 -0.04   
+STDDEV           0.79     0.80   0.79     0.77     ...       0.85  0.14   
+TSF              1.00     1.00   1.00     0.99     ...       0.94  0.12   
+Open             1.00     1.00   1.00     0.99     ...       0.94  0.12   
+Adj Close        1.00     1.00   1.00     0.99     ...       0.94  0.12   
+DailyResult     -0.00    -0.00  -0.00    -0.00     ...      -0.01  0.01   
+
+                 LINEARREG  LINEARREG_ANGLE  LINEARREG_SLOPE  STDDEV   TSF  \
+PrevOpen              1.00             0.13             0.13    0.79  1.00   
+PrevHigh              1.00             0.12             0.12    0.79  1.00   
+PrevLow               1.00             0.13             0.13    0.79  1.00   
+PrevAdjClose          1.00             0.13             0.13    0.79  1.00   
+PrevVol              -0.16            -0.04            -0.03   -0.01 -0.16   
+9MA                   1.00             0.11             0.10    0.79  1.00   
+20MA                  1.00             0.07             0.07    0.79  1.00   
+UpperBB               1.00             0.07             0.07    0.80  1.00   
+MidBB                 1.00             0.07             0.06    0.79  1.00   
+LowerBB               0.99             0.07             0.05    0.77  0.99   
+SAR                   1.00             0.06             0.06    0.79  0.99   
+ADX                  -0.07             0.08             0.07   -0.02 -0.07   
+APO                   0.19             0.61             0.66    0.08  0.19   
+CCI                   0.01             0.46             0.34   -0.01  0.01   
+DX                   -0.04             0.14             0.11    0.07 -0.04   
+MACD                  0.27             0.68             0.74    0.12  0.28   
+MACDSIGNAL            0.30             0.50             0.52    0.14  0.30   
+MACDHIST             -0.03             0.72             0.82   -0.02 -0.03   
+MOM                   0.11             0.81             0.91    0.06  0.12   
+ROC                  -0.01             0.48             0.39    0.00 -0.00   
+RSI                   0.06             0.54             0.43    0.01  0.07   
+STOCHSLOWK            0.06             0.31             0.24    0.05  0.06   
+STOCHSLOWD            0.07             0.41             0.32    0.05  0.07   
+ULTOSC                0.09             0.45             0.37    0.07  0.09   
+OBV                   0.69             0.13             0.11    0.54  0.69   
+ATR                   0.94            -0.00             0.01    0.85  0.94   
+BETA                  0.12            -0.06            -0.04    0.14  0.12   
+LINEARREG             1.00             0.13             0.13    0.79  1.00   
+LINEARREG_ANGLE       0.13             1.00             0.89    0.03  0.14   
+LINEARREG_SLOPE       0.13             0.89             1.00    0.05  0.14   
+STDDEV                0.79             0.03             0.05    1.00  0.79   
+TSF                   1.00             0.14             0.14    0.79  1.00   
+Open                  1.00             0.13             0.13    0.79  1.00   
+Adj Close             1.00             0.13             0.13    0.79  1.00   
+DailyResult          -0.00            -0.02            -0.02   -0.00 -0.00   
+
+                 Open  Adj Close  DailyResult  
+PrevOpen         1.00       1.00        -0.00  
+PrevHigh         1.00       1.00        -0.00  
+PrevLow          1.00       1.00        -0.00  
+PrevAdjClose     1.00       1.00        -0.00  
+PrevVol         -0.16      -0.16        -0.03  
+9MA              1.00       1.00        -0.00  
+20MA             1.00       1.00        -0.00  
+UpperBB          1.00       1.00        -0.00  
+MidBB            1.00       1.00        -0.00  
+LowerBB          0.99       0.99        -0.00  
+SAR              0.99       0.99        -0.00  
+ADX             -0.07      -0.07        -0.02  
+APO              0.18       0.18         0.00  
+CCI              0.02       0.02        -0.01  
+DX              -0.04      -0.04        -0.03  
+MACD             0.26       0.26        -0.01  
+MACDSIGNAL       0.29       0.29        -0.00  
+MACDHIST        -0.03      -0.03        -0.02  
+MOM              0.12       0.12        -0.02  
+ROC             -0.00      -0.00        -0.02  
+RSI              0.07       0.07        -0.01  
+STOCHSLOWK       0.07       0.07        -0.02  
+STOCHSLOWD       0.08       0.08        -0.01  
+ULTOSC           0.09       0.09         0.00  
+OBV              0.69       0.69         0.01  
+ATR              0.94       0.94        -0.01  
+BETA             0.12       0.12         0.01  
+LINEARREG        1.00       1.00        -0.00  
+LINEARREG_ANGLE  0.13       0.13        -0.02  
+LINEARREG_SLOPE  0.13       0.13        -0.02  
+STDDEV           0.79       0.79        -0.00  
+TSF              1.00       1.00        -0.00  
+Open             1.00       1.00        -0.00  
+Adj Close        1.00       1.00         0.01  
+DailyResult     -0.00       0.01         1.00  
+
+[35 rows x 35 columns]
+
+Missing Values
+PrevOpen           False
+PrevHigh           False
+PrevLow            False
+PrevAdjClose       False
+PrevVol            False
+9MA                False
+20MA               False
+UpperBB            False
+MidBB              False
+LowerBB            False
+SAR                False
+ADX                False
+APO                False
+CCI                False
+DX                 False
+MACD               False
+MACDSIGNAL         False
+MACDHIST           False
+MOM                False
+ROC                False
+RSI                False
+STOCHSLOWK         False
+STOCHSLOWD         False
+ULTOSC             False
+OBV                False
+ATR                False
+BETA               False
+LINEARREG          False
+LINEARREG_ANGLE    False
+LINEARREG_SLOPE    False
+STDDEV             False
+TSF                False
+Open               False
+Adj Close          False
+DailyResult        False
+dtype: bool
